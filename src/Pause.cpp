@@ -30,9 +30,9 @@ void            Pause::drawButt(sf::RenderWindow &m_window, unsigned int idx, sf
   text.setString((buttons[idx]->getWrite()).c_str());
   text.setPosition(pos);
   m_window.draw(*(buttons[idx]->getBox()));
-  // text.setOutlineColor(sf::Color(128, 128, 128));
-  // text.setFillColor(sf::Color(128, 128, 128));
-  text.setColor(sf::Color(128, 128, 128, 128));
+  text.setOutlineColor(sf::Color(128, 128, 128));
+  text.setFillColor(sf::Color(128, 128, 128));
+  // text.setColor(sf::Color(128, 128, 128, 128));
   m_window.draw(text);
   // write text + change inside text -> utilité de la map
 }

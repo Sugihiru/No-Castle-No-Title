@@ -30,9 +30,9 @@ void            Gameover::drawButt(sf::RenderWindow &m_window, unsigned int idx,
   text.setString((buttons[idx]->getWrite()).c_str());
   text.setPosition(pos);
   m_window.draw(*(buttons[idx]->getBox()));
-  // text.setOutlineColor(sf::Color(128, 128, 128));
-  // text.setFillColor(sf::Color(128, 128, 128));
-  text.setColor(sf::Color(128, 128, 128, 128));
+  text.setOutlineColor(sf::Color(128, 128, 128));
+  text.setFillColor(sf::Color(128, 128, 128));
+  // text.setColor(sf::Color(128, 128, 128, 128));
   m_window.draw(text);
   // write text + change inside text -> utilité de la map
 }
@@ -69,9 +69,9 @@ void Gameover::_printScore(sf::RenderWindow &win, sf::Font &font,
   sf::FloatRect textRect = text.getLocalBounds();
   text.setOrigin(textRect.left + textRect.width / 2.0f, 0);
   text.setPosition(sf::Vector2f(win_size.x / 2.0, 350));
-  // text.setOutlineColor(sf::Color(255, 255, 255));
-  // text.setFillColor(sf::Color(255, 255, 255));
-  text.setColor(sf::Color(255, 255, 255, 255));
+  text.setOutlineColor(sf::Color(255, 255, 255));
+  text.setFillColor(sf::Color(255, 255, 255));
+  // text.setColor(sf::Color(255, 255, 255, 255));
   win.draw(text);
 }
 

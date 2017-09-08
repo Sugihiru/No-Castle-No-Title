@@ -78,9 +78,9 @@ void		Menu::drawButt(sf::RenderWindow &m_window, unsigned int idx, sf::Font &fon
   text.setString((buttons[idx]->getWrite()).c_str());
   text.setPosition(pos);
   m_window.draw(*(buttons[idx]->getBox()));
-  // text.setOutlineColor(sf::Color(128, 128, 128));
-  // text.setFillColor(sf::Color(128, 128, 128));
-  text.setColor(sf::Color(128, 128, 128, 128));
+  text.setOutlineColor(sf::Color(128, 128, 128));
+  text.setFillColor(sf::Color(128, 128, 128));
+  // text.setColor(sf::Color(128, 128, 128, 128));
   m_window.draw(text);
   // write text + change inside text -> utilité de la map
 }
@@ -106,9 +106,9 @@ void	Menu::help_contents(sf::RenderWindow &m_window, sf::Font &font)
   text.setFont(font);
   text.setPosition(pos);
   text.setString(tmp.c_str());
-  // text.setOutlineColor(sf::Color(128, 128, 128));
-  // text.setFillColor(sf::Color(128, 128, 128));
-  text.setColor(sf::Color(128, 128, 128, 128));
+  text.setOutlineColor(sf::Color(128, 128, 128));
+  text.setFillColor(sf::Color(128, 128, 128));
+  // text.setColor(sf::Color(128, 128, 128, 128));
   m_window.draw(text);
 
 }
@@ -126,9 +126,9 @@ void	Menu::drawhelpbutt(sf::RenderWindow &m_window, sf::Font &font)
   text.setString((help_quit->getWrite()).c_str());
   text.setPosition(pos);
   m_window.draw(*(help_quit->getBox()));
-  // text.setOutlineColor(sf::Color(128, 128, 128));
-  // text.setFillColor(sf::Color(128, 128, 128));
-  text.setColor(sf::Color(128, 128, 128, 128));
+  text.setOutlineColor(sf::Color(128, 128, 128));
+  text.setFillColor(sf::Color(128, 128, 128));
+  // text.setColor(sf::Color(128, 128, 128, 128));
   m_window.draw(text);
   // write text + change inside text -> utilité de la map
   help_contents(m_window, font);
