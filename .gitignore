@@ -1,3 +1,4 @@
 *.o
 *.sublime*
 no_castle_no_title
+build/*
